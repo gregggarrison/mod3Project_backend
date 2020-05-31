@@ -1,13 +1,27 @@
 Score.destroy_all
+User.destroy_all
 
-score1 = Score.create(name: "Gregg", score: 322)
-score1 = Score.create(name: "Sally", score: 443)
-score1 = Score.create(name: "Pat", score: 111)
-score1 = Score.create(name: "Erica", score: 333)
-score1 = Score.create(name: "Clint", score: 240)
-score1 = Score.create(name: "Joe", score: 40)
-score1 = Score.create(name: "Kelly", score: 10)
-score1 = Score.create(name: "Mike", score: 110)
-score1 = Score.create(name: "Phil", score: 20)
-score1 = Score.create(name: "Tom", score: 222)
+
+user1 = User.create(user_name: "Gregg", password: "password")
+user2 = User.create(user_name: "Joe", password: "password")
+user3 = User.create(user_name: "Tom", password: "password")
+user4 = User.create(user_name: "Bob", password: "password")
+user5 = User.create(user_name: "Jim", password: "password")
+
+
+
+
+
+
+
+score1 = Score.create(user_id: 1, score: 322)
+score1 = Score.create(user_id: 2, score: 443)
+score1 = Score.create(user_id: 3, score: 111)
+score1 = Score.create(user_id: 4, score: 333)
+score1 = Score.create(user_id: 5, score: 240)
+score1 = Score.create(user_id: 1, score: 40)
+score1 = Score.create(user_id: 2, score: 10)
+score1 = Score.create(user_id: 3, score: 110)
+score1 = Score.create(user_id: 4, score: 20)
+score1 = Score.create(user_id: 5, score: 222)
 
